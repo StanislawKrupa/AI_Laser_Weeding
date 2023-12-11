@@ -167,6 +167,16 @@ freq = cv2.getTickFrequency()
 videostream = VideoStream(resolution=(imW,imH),framerate=30).start()
 time.sleep(1)
 
+# Calculate the height of the region of interest (ROI)
+roi_height = int(imH / 5)
+
+# Calculate the width and height of the region of interest (ROI)
+roi_width = int(imW)
+roi_start_y = int(imH)
+# roi_start_y = int(2 * imH / 3)
+roi_end_y = roi_start_y - roi_height
+# roi_end_y = roi_start_y + roi_height
+
 #for frame1 in camera.capture_continuous(rawCapture, format="bgr",use_video_port=True):
 while True:
 
