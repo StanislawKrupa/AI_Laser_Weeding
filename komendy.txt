@@ -1,0 +1,1 @@
+python.exe .\TFLite_detekcja_SK.py --modeldir 'D:\VSC\1.WEEDS_DETECTION\Carrot_v1\' --graph Carrot_lite2_500.tflite --video 'D:\VSC\1.WEEDS_DETECTION\inz_video_v1.2.mp4'
